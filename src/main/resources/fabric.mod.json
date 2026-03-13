@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "stacksizeplus",
+	"version": "${version}",
+	"name": "Stack Size Plus",
+	"description": "Increases the max stack size for specific vanilla items.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/stacksizeplus/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.stacksizeplus.StackSizePlus"
+		],
+		"client": [
+			"com.stacksizeplus.StackSizePlusClient"
+		]
+	},
+	"mixins": [
+		"stacksizeplus.mixins.json",
+		{
+			"config": "stacksizeplus.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
