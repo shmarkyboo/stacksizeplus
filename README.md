@@ -1,3 +1,8 @@
+![Minecraft](https://img.shields.io/badge/Minecraft-1.21.11-brightgreen)
+![Loader](https://img.shields.io/badge/Loader-Fabric-blue)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Modrinth](https://img.shields.io/badge/Available%20on-Modrinth-orange)
+
 # Stack Size Plus
 
 A Fabric mod that increases the stack size of many normally non-stackable vanilla items to **64**.
