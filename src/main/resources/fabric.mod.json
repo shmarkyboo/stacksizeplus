@@ -5,13 +5,13 @@
 	"name": "Stack Size Plus",
 	"description": "Increases the max stack size for specific vanilla items.",
 	"authors": [
-		"Me!"
+		"shmark"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/mod/stack-size-plus",
+		"sources": "https://github.com/shmarkyboo/stacksizeplus"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/stacksizeplus/icon.png",
 	"environment": "*",
 	"entrypoints": {

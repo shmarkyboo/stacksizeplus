@@ -126,7 +126,8 @@ public abstract class ItemStackMixin {
             || item == Items.MUSIC_DISC_OTHERSIDE || item == Items.MUSIC_DISC_5
             || item == Items.MUSIC_DISC_PIGSTEP || item == Items.MUSIC_DISC_RELIC
             || item == Items.MUSIC_DISC_CREATOR || item == Items.MUSIC_DISC_CREATOR_MUSIC_BOX
-            || item == Items.MUSIC_DISC_PRECIPICE;
+            || item == Items.MUSIC_DISC_PRECIPICE || item == Items.MUSIC_DISC_TEARS
+            || item == Items.MUSIC_DISC_LAVA_CHICKEN;
     }
 
     private static boolean isAnyShulkerBox(Item item) {
@@ -171,7 +172,8 @@ public abstract class ItemStackMixin {
     }
 
     private static boolean isHorseArmor(Item item) {
-        return item == Items.LEATHER_HORSE_ARMOR
+        return item == Items.LEATHER_HORSE_ARMOR    
+            || item == Items.COPPER_HORSE_ARMOR
             || item == Items.IRON_HORSE_ARMOR
             || item == Items.GOLDEN_HORSE_ARMOR
             || item == Items.DIAMOND_HORSE_ARMOR
