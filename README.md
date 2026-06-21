@@ -1,7 +1,7 @@
-![Minecraft](https://img.shields.io/badge/Minecraft-1.21.11-brightgreen)
+![Minecraft](https://img.shields.io/badge/Minecraft-26.2-brightgreen)
 ![Loader](https://img.shields.io/badge/Loader-Fabric-blue)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
-![Modrinth](https://img.shields.io/badge/Available%20on-Modrinth-orange)
+[![Modrinth](https://img.shields.io/badge/Available%20on-Modrinth-orange)](https://modrinth.com/mod/stack-size-plus)
 
 # Stack Size Plus
 
@@ -15,35 +15,46 @@ The goal of this mod is to make inventory management easier while still respecti
 
 The following items now stack to **64**:
 
-- Armor stands
-- Banner patterns
-- Banners
-- Beds
-- Boats (Regular and chest)
-- Buckets (Empty)
-- Cake
-- Music discs
-- Eggs (Regular, brown, and blue)
-- Ender pearls
-- Enchanted books
-- Goat horns
-- Honey bottles
-- Minecarts
-- Potions (Regular, splash, and lingering)
-- Saddles
-- Shulker boxes (Empty)
-- Signs (Reuglar and hanging)
-- Snowballs
-- Stews
-- Totems of Undying
-- Writable books
-- Horse armor
-- Nautilus armor
-- Wolf armor
+**Armor**
+- Horse armor (1 -> 64)
+- Nautilus armor (1 -> 64)
+- Wolf armor (1 -> 64)
+
+**Blocks**
+- Banners (16 -> 64)
+- Beds (1 -> 64)
+- Cake (1 -> 64)
+- Shulker boxes (Empty) (1 -> 64)
+
+**Entities**
+- Armor stands (16 -> 64)
+- Boats (1 -> 64)
+- Minecarts (1 -> 64)
+- Signs (16 -> 64)
+
+**Food**
+- Stews (1 -> 64)
+
+**Items**
+- Banner patterns (1 -> 64)
+- Buckets (Empty) (16 -> 64)
+- Enchanted books (1 -> 64)
+- Goat horns (1 -> 64)
+- Honey bottles (16 -> 64)
+- Music discs (1 -> 64)
+- Saddles (1 -> 64)
+- Totems of Undying (1 -> 64)
+- Writable books (1 -> 64)
+
+**Throwables**
+- Eggs (16 -> 64)
+- Ender pearls (16 -> 64)
+- Potions (Regular, splash, and lingering) (1 -> 64)
+- Snowballs (16 -> 64)
 
 ---
 
-## Data-aware stacking
+## Item-data stacking
 
 Items that contain **data** will only stack if the data matches.
 
@@ -61,7 +72,7 @@ Examples:
 
 ## Requirements
 
-- **Minecraft:** 1.21.11  
+- **Minecraft:** 1.21.11, 26.2
 - **Loader:** Fabric  
 - **Fabric API:** Required  
 
@@ -84,7 +95,7 @@ folder.
 
 Works on multiplayer servers.
 
-For best compatibility, install the mod on:
+For the best compatibility, install the mod on:
 
 - the server
 - the client
