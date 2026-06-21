@@ -1,43 +1,39 @@
 package com.stacksizeplus.mixin;
 
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import net.minecraft.screen.AnvilScreenHandler;
-import net.minecraft.screen.ScreenHandler;
-
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.inventory.AnvilMenu;
+import net.minecraft.world.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-@Mixin(AnvilScreenHandler.class)
+@Mixin(AnvilMenu.class)
 public abstract class AnvilScreenHandlerMixin {
 
     @Shadow
-    private int repairItemUsage;
+    private int repairItemCountCost;
 
-    @Shadow
-    private boolean keepSecondSlot;
-
-    @Inject(method = "updateResult", at = @At("TAIL"))
+    @Inject(method = "createResult", at = @At("TAIL"))
     private void stacksizeplus$fixStackedEnchantedBooks(CallbackInfo ci) {
-        ScreenHandler handler = (ScreenHandler) (Object) this;
-        ItemStack right = handler.getSlot(1).getStack();
+        AbstractContainerMenu handler = (AbstractContainerMenu)(Object)this;
 
-        if (right.isEmpty()) {
+        ItemStack addition = handler.getSlot(1).getItem();
+
+        if (addition.isEmpty()) {
             return;
         }
 
-        if (!right.isOf(Items.ENCHANTED_BOOK)) {
+        if (addition.getCount() <= 1) {
             return;
         }
 
-        if (right.getCount() <= 1) {
+        if (!addition.has(DataComponents.STORED_ENCHANTMENTS)) {
             return;
         }
 
-        this.repairItemUsage = 1;
-        this.keepSecondSlot = true;
+        this.repairItemCountCost = 1;
     }
 }
