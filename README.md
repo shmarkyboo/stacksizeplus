@@ -1,6 +1,6 @@
-![Minecraft](https://img.shields.io/badge/Minecraft-26.2-brightgreen)
-![Loader](https://img.shields.io/badge/Loader-Fabric-blue)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+[![Minecraft](https://img.shields.io/badge/Minecraft-26.2-brightgreen)](https://www.minecraft.net/)
+[![Loader](https://img.shields.io/badge/Loader-Fabric-blue)](https://fabricmc.net/)
+[![License](https://img.shields.io/badge/License-MIT-yellow)](https://mit-license.org/)
 [![Modrinth](https://img.shields.io/badge/Available%20on-Modrinth-orange)](https://modrinth.com/mod/stack-size-plus)
 
 # Stack Size Plus
