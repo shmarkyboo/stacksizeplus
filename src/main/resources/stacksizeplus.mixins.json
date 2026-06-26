@@ -5,7 +5,9 @@
   "refmap": "stacksizeplus-refmap.json",
   "mixins": [
     "ItemInstanceMixin",
-    "AnvilScreenHandlerMixin"
+    "AnvilScreenHandlerMixin",
+    "BundleContentsMixin",
+    "BundleContentsMutableMixin"
   ],
   "injectors": {
     "defaultRequire": 1

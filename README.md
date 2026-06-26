@@ -72,31 +72,17 @@ Examples:
 
 ## Requirements
 
-- **Minecraft:** 1.21.11, 26.2
+- **Minecraft:** 26.2
 - **Loader:** Fabric  
 - **Fabric API:** Required  
 
 ---
 
-## Installation
-
-1. Download the `.jar` from the **Releases** page.
-2. Place the file in your:
-
-```
-.minecraft/mods
-```
-
-folder.
-
----
-
-## Multiplayer
+## Multiplayer Support
 
 Works on multiplayer servers.
 
-For the best compatibility, install the mod on:
-
+For the best compatibility, install the mod on both
 - the server
 - the client
 
@@ -104,7 +90,7 @@ For the best compatibility, install the mod on:
 
 ## Building from Source
 
-Clone the repository and run:
+Clone the repo and run:
 
 ```
 gradlew build
